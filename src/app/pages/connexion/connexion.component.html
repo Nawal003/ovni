@@ -1,0 +1,11 @@
+<h2>connexion</h2>
+<blockquote></blockquote>
+<form (submit)="auth.idFireUser()" *ngIf="!auth.user.uid">
+    <input name="id" [(ngModel)]="auth.user.email" placeholder="Renseignez votre identifiant">
+    <input name=" password" type="password" [(ngModel)]="auth.user.pass" placeholder="Entrez votre mot de passe">
+    <input type="reset" value="effacer">
+    <input type="submit" value="valider">
+</form>
+<article *ngIf="auth.user.uid ">
+    <button (click)="auth.signOut()">Se déconnecter</button>
+</article>

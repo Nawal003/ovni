@@ -1,0 +1,27 @@
+<main>
+    <header>
+        <h1> </h1>
+        <nav>
+            <ul>
+                <li><a routerLink="/" title="Accueil">Accueil</a></li>
+                <li><a routerLink="/question" *ngIf="auth.user.uid" title="Accceder aux questions">Questionnaire</a>
+                </li>
+                <li><a routerLink="/connexion" title="Se connecter">Se connecter</a></li>
+                <li><a routerLink="/compte" title="Créer un compte">Créer un compte</a></li>
+                <li><a routerLink="/agents" title="Surveiller et punir">Accueil agents</a></li>
+                <ul>
+                    <li><a routerLink="/agents/comptes">Voir les utlisateurs</a></li>
+                    <li><a routerLink="/agents/questionnaires">Voir les questionnaires</a></li>
+
+                </ul>
+
+
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <!-- Balise de référence pour les routes -->
+        <router-outlet></router-outlet>
+    </section>
+</main>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ovniornotovni-119e9": {
+      "hosting": {
+        "ovniornotovni": [
+          "ovniornotovni-119e9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ovniornotovni-119e9"
+  }
+}
